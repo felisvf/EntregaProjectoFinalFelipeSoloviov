@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: #FFFFFF;
+  flex-direction: column;
+  display: flex;
+  background-color: #6633CC;
+  font-family: "Open Sans", Impact;
+}
+
+.mainback {
+  background-image: url(/img/city.jpg);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3D4450;
+  transition: all 0.5s;
+}
+
+.brand-title {
+  font-size: 1.5em;
+  margin: 0.5rem;
+  color: #FFFFFF;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-links li {
+  list-style: none;
+  text-decoration: none;
+}
+
+input {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  width: 200px;
+  border-radius: 30px;
+  border: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: flex;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input {
+    width: 100%;
+    margin: 0.7rem;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+.imgsize {
+  border-radius: 40px;
+  width: 350px;
+  height: 200px;
+  padding: 3px;
+  margin: 3px;
+  border: solid 5px #CCFF00;
+  align-items: center;
+}
+
+main {
+  border: solid 3px rgb(26, 26, 26);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #CCFF00;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  animation: blur 0.1s ease-out infinite;
+  text-shadow: 0px 2px 5px #CCFF00, 0px 0px 7px #CCFF00;
+  -webkit-animation: blur 0.1s ease-out infinite;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: blur 0.8s ease-out infinite;
+  text-shadow: 0px 50px 5px #fff, 0px 0px 7px #fff;
+  -webkit-animation: blur 0.8s ease-out infinite;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff, 0px 0px 50px #7B96B8, 0px 0px 150px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px 10px 100px #7B96B8, 0px -10px 100px #7B96B8, 0px -10px 100px #7B96B8;
+  }
+}
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: #CCFF00;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  color: #CCFF00;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1rem;
+  color: #CCFF00;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h6 {
+  text-align: center;
+  font-size: 1rem;
+  color: #CCFF00;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h7 {
+  text-align: center;
+  font-size: 1rem;
+  color: #CCFF00;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.containerc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containercard {
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  margin: 15px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  border: solid #FFFFFF 2px;
+  margin: 15px;
+  padding: 25px;
+  background-color: rgb(26, 26, 26);
+  color: #FFFFFF;
+}
+
+.cardtxt {
+  display: flex;
+  position: static;
+  border-radius: 120px;
+  border: solid #FFFFFF 2px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(26, 26, 26);
+}
+
+.btn {
+  width: 50px;
+  display: block;
+  text-align: center;
+  background-color: #6633CC;
+  color: #FFFFFF;
+  margin: 5px #CCFF00;
+  padding: 5px;
+  border: solid 5px #FFFFFF;
+  display: block;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-left: 150px;
+}
+
+footer {
+  margin: 3px;
+  padding: 4px;
+  border: solid 3px rgb(26, 26, 26);
+  color: #FFFFFF;
+  background-color: rgb(26, 26, 26);
+  justify-content: baseline;
+  text-decoration: none;
+  text-align: left;
+}
+
+.imgsizepages {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  width: 700px;
+  height: 400px;
+  padding: 5px;
+  margin: 3px;
+  border: solid 5px #FFFFFF;
+  align-items: center;
+}
+
+.containeremote {
+  margin: 3px;
+  padding: 5px;
+  background-color: #6633CC;
+  display: flex;
+  gap: 10px;
+  grid-template-columns: repeat(1);
+  flex-direction: column;
+}
+
+.containeremote div {
+  background-color: rgb(26, 26, 26);
+  border: solid 5px rgb(26, 26, 26);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.videobox {
+  border-radius: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  margin: 45px;
+  padding: 1px;
+  border: solid 5px #CCFF00;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 25px;
+  background-color: rgb(26, 26, 26);
+  color: #FFFFFF;
+}
+.form div {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  border: solid #6633CC 9px;
+  margin: 15px;
+  padding: 25px;
+  background-color: rgb(26, 26, 26);
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
